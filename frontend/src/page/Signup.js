@@ -18,7 +18,7 @@ function Signup() {
     confirmPassword: "",
     image : ""
   });
-  console.log(data);
+
   const handleShowPassword = () => {
     setShowPassword((preve) => !preve);
   };
@@ -38,7 +38,7 @@ function Signup() {
 
   const handleUploadProfileImage = async(e)=>{
       const data = await ImagetoBase64(e.target.files[0])
-      console.log(data)
+  
 
       setData((preve)=>{
           return{
@@ -54,7 +54,7 @@ console.log(process.env.REACT_APP_SERVER_DOMIN)
     const { firstName, email, password, confirmPassword } = data;
     if (firstName && email && password && confirmPassword) {
       if (password === confirmPassword) {
-          console.log(data)
+    
           const fetchData = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/signup`,{
             method : "POST",
             headers : {
@@ -64,7 +64,7 @@ console.log(process.env.REACT_APP_SERVER_DOMIN)
           })
 
           const dataRes = await fetchData.json()
-          console.log(dataRes)
+    
 
         // alert(dataRes.message);
         toast(dataRes.message)
