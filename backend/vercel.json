@@ -1,6 +1,6 @@
 {
   "version" : 2,
-  "name" : "Backend",
+  "name" : "backend",
   "builds" : [
     {
         "src" : "./index.js",
