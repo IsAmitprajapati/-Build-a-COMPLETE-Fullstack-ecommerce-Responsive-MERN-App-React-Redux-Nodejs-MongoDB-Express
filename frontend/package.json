@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy" : "https://mern-backend-sigma.vercel.app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
     "@stripe/react-stripe-js": "^2.1.0",
