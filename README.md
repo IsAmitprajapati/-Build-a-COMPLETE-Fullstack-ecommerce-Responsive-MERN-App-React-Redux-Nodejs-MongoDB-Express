@@ -25,3 +25,6 @@ REACT_APP_STRIPE_PUBLIC_KEY  = <stripe public key>
 start : 
 
 ## npm start
+ 
+ ## Full Video on Youtube : 
+    Dynamic Coding with Amit
